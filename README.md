@@ -7,32 +7,36 @@ Implementation based on [Generate and Validate Tokens](https://developer.apple.c
 ## Install
 
 ```bash
-$ npm install apple-id-client-secret
+$ npm install @praveentcom/siwa-client-secret
 ```
 
 or
 
 ```bash
-$ yarn add apple-id-client-secret
+$ yarn add @praveentcom/siwa-client-secret
 ```
 
 ## Usage
 
 ```typescript
-import { createClientSecret } from "apple-id-client-secret"
+import { createClientSecret } from "@praveentcom/siwa-client-secret"
 
 const clientSecret: string = createClientSecret({
   keyId: "{key ID from Apple}",
   bundleId: "com.example",
   teamId: "{team ID frmo Apple}",
   privateKey: `-----BEGIN PRIVATE KEY-----
-{your}
-{private}
-{key}
------END PRIVATE KEY-----`;
+    {your}
+    {private}
+    {key}
+    -----END PRIVATE KEY-----`;
 });
 ```
 
 ## License
 
 This project is licensed under the MIT license. See the [LICENSE](LICENSE) file for more info.
+
+## Attibutions
+
+This project was originally forked from [@maxschmeling](https://github.com/maxschmeling)'s [repository] (https://github.com/maxschmeling/apple-id-client-secret) since the repository was not maintained to fix vulnerabilities and recent Sign in with Apple enhancements.

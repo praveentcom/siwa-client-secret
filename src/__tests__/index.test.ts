@@ -1,3 +1,3 @@
-import { createClientSecret } from "../index";
+import { createClientSecret } from "../index"
 
-test("createClientSecret", () => {});
+test("createClientSecret", () => {})
